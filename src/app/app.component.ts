@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'calculator';
+  buffer: number=0;
+  addNumber(numero:number){
+    this.buffer = this.buffer * 10 + numero;
+  }
 }
