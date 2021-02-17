@@ -7,7 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   buffer: number=0;
-  addNumber(numero:number){
+  op1: number=0;
+  op2: number=0;
+  /**
+   * 
+   * @param numero return= void
+   */
+  addNumber(numero:number):void{
     this.buffer = this.buffer * 10 + numero;
+  }
+  clear(){
+    this.buffer = 0;
   }
 }
