@@ -11,6 +11,7 @@ export class AppComponent {
   op2: number=0;
   operation: number=0;//Suma=1 Resta=2 Multiplicación=3
   delete: boolean=false;
+  backspace(){}
   /**
    * 
    * @param numero return= void
